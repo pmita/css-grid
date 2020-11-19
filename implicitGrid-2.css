@@ -1,0 +1,44 @@
+.photo-grid{
+    height:80vh;
+    display:grid;
+    gap:1rem;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-rows: 120px;
+}
+
+@media screen and (min-width: 600px){
+    .card-1{
+        grid-row: span 4 / auto;
+        grid-column: span 3 / auto;
+    }
+
+    .card-2{
+        grid-row: span 2 / auto;
+        grid-column: span 3 / auto;
+    }
+
+    .card-3{
+        grid-row: span 2 / auto;
+        grid-column: span 4 / auto;
+    }
+
+    .card-4{
+        grid-row: span 2 / auto;
+        grid-column: span 5 / auto;
+    }
+
+    .card-5{
+        grid-row: span 5 / auto;
+        grid-column: span 2 / auto;
+    }
+
+    .card-6{
+        grid-row: span 3 / auto;
+        grid-column: span 2 / auto;
+    }
+
+    .card-7{
+        grid-row: span 3 / auto;
+        grid-column: span 6 / auto;
+    }
+}

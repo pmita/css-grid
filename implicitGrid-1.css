@@ -1,0 +1,36 @@
+.photo-grid {
+  height: 100vh;
+  display: grid;
+  gap: 1rem; /**This ensures all elements have 1rem gap instead of messing with padding **/
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  /*Here we are making the columns implicit meaning that the algorythm calculates te correct setup accorinf to our minmax*/
+
+  grid-auto-rows: 120px;
+}
+
+@media screen and (min-width: 600px) {
+  /*Define the columns and rows to start wehever, span 2 and finidh automatically*/
+  .card-1 {
+    grid-row: span 6 / auto;
+    grid-column: span 3 / auto;
+  }
+
+  .card-2 {
+    grid-row: span 2 / auto;
+    grid-column: span 4 / auto;
+  }
+
+  .card-3 {
+    grid-row: span 2 / auto;
+    grid-column: span 2 / auto;
+  }
+
+  .card-4 {
+    grid-row: span 4 / auto;
+    grid-column: span 6 / auto;
+  }
+}
+
+p{
+  margin:5% auto;
+}
